@@ -1,0 +1,37 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+nav {
+    height: 124px;
+    width: calc(100vw - (25%));
+    background-color: $color-2;
+
+    padding: 10px 15% 10px 10%;
+
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        a {
+            text-decoration: none;
+            color: $black;
+            font-weight: 600;
+        }
+
+        .contact-us {
+            border-radius: 10px;
+            color: $white;
+            padding: 5px 15px;
+            @include backgroundHover($color-5, $color-4);
+        }
+    }
+}

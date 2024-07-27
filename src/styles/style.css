@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #000000;
+  transition: background-color, fill;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+
+body {
+  height: 100vh;
+}
+
+.logo-container {
+  height: 50%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-decoration: none;
+}
+.logo-container span {
+  color: #C24914;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+nav {
+  height: 124px;
+  width: calc(100vw - 25%);
+  background-color: #F9E0AE;
+  padding: 10px 15% 10px 10%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+nav .menu a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
+nav .menu .contact-us {
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 5px 15px;
+  background-color: #C24914;
+}
+nav .menu .contact-us:hover {
+  background-color: #FC8621;
+}
+
+main {
+  margin-top: 44px;
+  padding: 70px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+main section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 100px;
+}
+main section div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main section h1 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 48px;
+}
+main section h2 {
+  color: #000000;
+  font-weight: 600;
+  font-size: 48px;
+}
+main section span {
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  opacity: 0.45;
+}
+main section a.button {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px 20px;
+  background-color: #682C0E;
+}
+main section a.button:hover {
+  background-color: #C24914;
+}
+main section img {
+  width: 480px;
+}
+main section.subscribe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 40px;
+  background-color: #F9E0AE;
+  margin-top: 0;
+}
+main section.subscribe input {
+  height: 75px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+}
+main section.subscribe input::-moz-placeholder {
+  text-align: center;
+}
+main section.subscribe input::placeholder {
+  text-align: center;
+}
+main section.subscribe input[type=submit] {
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #C24914;
+}
+main section.subscribe input[type=submit]:hover {
+  background-color: #FC8621;
+}
+main section.join {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  height: 600px;
+  align-items: start;
+}
+main section.join div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+main section.join div a.button {
+  background-color: #FC8621;
+}
+main section.join div a.button:hover {
+  background-color: #C24914;
+}
+main section.join img {
+  position: relative;
+  width: 150%;
+  justify-self: center;
+  left: -40%;
+  align-self: self-end;
+}
+main section.join img.float {
+  left: auto;
+  width: 90px;
+  position: absolute;
+  z-index: 0;
+}
+main section.join img.float:nth-child(4) {
+  left: 50%;
+  top: 0;
+}
+main section.join img.float:nth-child(6) {
+  left: 75%;
+  top: 90px;
+}
+main section.join img.float:nth-child(5) {
+  left: 5%;
+  top: 50%;
+}
+main section.join img.float:nth-child(3) {
+  left: 30%;
+  top: 80%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #F9E0AE;
+  padding: 50px 10%;
+}
+footer h4 {
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+footer div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+footer div.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+footer div.socials svg {
+  width: 28px;
+  fill: #000;
+  cursor: pointer;
+}
+footer div.socials svg:hover {
+  fill: #FC8621;
+}/*# sourceMappingURL=style.css.map */

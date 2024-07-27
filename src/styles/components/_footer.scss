@@ -1,0 +1,43 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-2;
+    padding: 50px 10%;
+
+    h4 {
+        @include font-style(600, 20px)
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        &.socials {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+
+            & svg {
+                width: 28px;
+                fill: #000;
+                cursor: pointer;
+
+                &:hover {
+                    fill: $color-4;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import "./variables";
+
+@mixin font-style ($args...) {
+    $fs: 1rem;
+    $fw: 400;
+    $fc: $black;
+
+    @each $arg in $args {
+      @if type-of($arg) == color {
+        $fc: $arg;
+      } @else if (type-of($arg) == number and $arg % 100 == 0) or index((lighter, normal, medium, bold, bolder), $arg) {
+        $fw: $arg;
+      } @else if type-of($arg) == number  {
+        $fs: $arg;
+      };
+    };
+
+    color: $fc;
+    font-weight: $fw;
+    font-size: $fs;
+  }
+
+
+@mixin backgroundHover($bg, $bgHover: 0) {
+  @if type-of($bg) == color {
+    background-color: $bg;
+  }
+  
+  @if type-of($bgHover) == color {
+    &:hover {
+      background-color: $bgHover;
+    }
+  }
+}
