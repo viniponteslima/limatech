@@ -163,10 +163,13 @@ main section.join div a.button:hover {
 }
 main section.join img {
   position: relative;
-  width: 150%;
+  width: 100%;
   justify-self: center;
   left: -40%;
-  align-self: self-end;
+  bottom: 0;
+}
+main section.join img:not(.float) {
+  align-self: flex-end;
 }
 main section.join img.float {
   left: auto;

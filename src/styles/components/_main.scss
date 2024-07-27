@@ -94,10 +94,13 @@ main {
 
             img {
                 position: relative;
-                width: 150%;
+                width: 100%;
                 justify-self: center;
                 left: -40%;
-                align-self: self-end;
+                bottom: 0;
+                &:not(.float){
+                    align-self: flex-end;
+                }
 
                 &.float {
                     left: auto;
